@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+/*    font-family: 'Poopins', sans-serif ;*/
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+/* #bars{
+    width: 30px;
+}
+.task-box{
+    margin: 0;
+    padding: 0;
+}
+p{
+    margin: 0;
+} */
+
+body{
+    background-image: url("images.jpg") ;
+    
+}
+.wrapper{
+    max-width: 400px;
+    background:#424141c3;
+    margin :140px auto ;
+    padding: 25px 0;
+    
+}
+.text{
+    max-width: 250px;
+} 
+.task-input{
+    height: 52px;
+    padding: 0 25px;
+    position: relative;
+}
+.task-input i{
+   position: absolute;
+   transform: translate(15px,20px);
+}
+.task-input input{
+    height: 100%;
+    width: 100%;
+    padding: 5px 0 0 50px;
+    font-size: 15px;
+    border-radius: 8px;
+    border: 1px solid #999;
+    outline-color:#086ed5;
+}
+.task-input input::placeholder{
+    color: #bfbfbf;
+}
+.controls{
+    align-items: center;
+    padding: 18px 25px;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+}
+.filters span{
+    align-items: center;
+    margin: 0 8px;
+    font-size: 17px;
+    cursor: pointer;
+    color: #ffff;
+}
+.filters span.active{
+    color: #086ed5;
+}
+
+ .controls .clear-all{
+    border: none;
+    font-size: 13px;
+    color: white;
+    padding: 8px 13px;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: -5px;
+    background: linear-gradient(135deg, #1798fb 0%, #2D5CFE 100%);
+} 
+
+.task-box{
+    margin: 20px 25px;
+}
+.task label{
+    display: flex;
+}
+.task label p.checked{
+    text-decoration:line-through;
+    
+}
+.task-box .task{
+    display: flex;
+    align-items:center;
+    justify-content:space-between;
+    font-size: 17px;
+    margin-bottom: 18px;
+    padding-bottom: 16px;
+    color:#ffff;
+    border-bottom: 1px solid #ccc;
+}
+.task-box .task:last-child{
+    margin-bottom: 0;
+    border-bottom: 0;
+    padding-bottom: 0;
+}
+.task label input{
+    margin-right: 14px;
+    
+}
+li{
+    list-style-type: none;
+}
+
+.task button {
+    background:none;
+    border: none;
+    color: #007BFF;
+    cursor: pointer;
+    /* font-size: larger; it works when you also write someting in button */
+    margin-right: 5px;
+    
+} 
+
+  .task button i {
+    font-size: 20px;
+  }
+
+.task button.edit i {
+    color: #17b85a;
+    margin-right: 10px;
+}
+
+.task button.delete i {
+   color: #db0a1fb8;
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin-left: 25%;
+    margin-top: 15%;
+    padding: 20px 30px;
+    text-align: center;
+    border: 1px solid #888;
+    width: 50%;
+    min-height: 200px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    right: 10px;
+    top: 0;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+
+
+.close:hover,
+.close:focus {
+  color: #e31414;
+  cursor: pointer;
+}
+h2{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 40px;
+}
+#editTaskInput{
+        width: 100%; /* Adjust the width as needed */
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin-top: 10px;
+        outline-color: #086ed5;
+}
+      
+#editTaskInput::placeholder {
+        color: #bfbfbf;
+      }
+ 
+#saveEditButton{
+    background: #086ed5;
+    color: white;
+    margin: 10px 20px;
+    padding: 15px 30px;
+    border: none;
+    margin-right: 0px;
+    display: inline-block;
+    border-radius: 15px;
+    font-size: 15px;
+    float: right;
+}
