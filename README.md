@@ -8,7 +8,7 @@ A visually appealing Todo App implemented in JavaScript with a user-friendly int
 - Filter tasks by All, Pending, or Completed.
 - Edit or delete tasks.
 - Clear all tasks with the "Clear All" button.
-- 
+  
 ## How to Use
 
 1. Open the webpage.
